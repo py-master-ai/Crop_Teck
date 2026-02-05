@@ -27,14 +27,15 @@ current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 if selected == "Home":
 
     # LOGO.
-    st.subheader("Farming the Smart Way", divider=True)
     logo = current_dir / "assets" / "logo.jpeg"
     logo = Image.open(logo)
 
     st.image(logo, use_container_width=True)
 
     api_url = "http://leaf-diseases-detect.vercel.app"
-
+    st.subheader("Farming the Smart Way", divider=True)
+    st.success("Take a pic and then 👇👇")
+            
     col1, col2 = st.columns([1, 2], border=True)
     with col1:
         uploaded_file = st.file_uploader(
@@ -166,6 +167,7 @@ elif selected == ("Learn"):
 elif selected == "About Us":
     st.info("Call/WhatsApp: +254712345678")
     st.info("Crop Teck v1.0.0")
+
 
 
 
