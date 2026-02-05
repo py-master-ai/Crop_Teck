@@ -17,7 +17,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 selected = option_menu(
     menu_title=None,
-    options=["Home", "Learn", "Contact", "About"],
+    options=["Home", "Learn", "Phone", "About"],
     orientation="horizontal",
 )
 
@@ -169,5 +169,6 @@ elif selected == "Contact":
 elif selected == "About":
 
     st.info("Crop Teck v1.0.0")
+
 
 
