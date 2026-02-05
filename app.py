@@ -17,7 +17,8 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 selected = option_menu(
     menu_title=None,
-    options=["Home", "Learn", "Phone", "About"],
+    options=["Home", "Learn", "About Us"],
+    icons=["house", "lightbulb", "person-lines-fill"],
     orientation="horizontal",
 )
 
@@ -162,13 +163,10 @@ elif selected == ("Learn"):
     st.video("https://www.youtube.com/watch?v=oVg6ycY3eXQ&t=17s&pp=ygUfa2VueWEgY3JvcCBkaXNlYXNlcyBsZWFmIGNvdXJzZQ%3D%3D")
     st.video("https://www.youtube.com/watch?v=7w3anrCnm9Y&pp=ygUiY3JvcCBkaXNlYXNlcyBsZWFmIGNvdXJzZSBpbiBrZW55YQ%3D%3D")
 
-
-elif selected == "Contact":
+elif selected == "About Us":
     st.info("Call/WhatsApp: +254712345678")
-
-elif selected == "About":
-
     st.info("Crop Teck v1.0.0")
+
 
 
 
