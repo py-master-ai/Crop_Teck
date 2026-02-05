@@ -31,7 +31,7 @@ if selected == "Home":
     logo = current_dir / "assets" / "logo.jpeg"
     logo = Image.open(logo)
 
-    st.image(logo, width=500)
+    st.image(logo, use_container_width=True)
 
     api_url = "http://leaf-diseases-detect.vercel.app"
 
@@ -166,6 +166,7 @@ elif selected == ("Learn"):
 elif selected == "About Us":
     st.info("Call/WhatsApp: +254712345678")
     st.info("Crop Teck v1.0.0")
+
 
 
 
