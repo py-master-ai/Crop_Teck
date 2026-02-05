@@ -5,7 +5,7 @@ from PIL import Image
 from pathlib import Path
 import requests
 
-st.set_page_config(page_title="Crop Teck", page_icon="leaf", layout="centered")
+st.set_page_config(page_title="Crop Teck", page_icon="leaf", layout="wide")
 
 hide_streamlit_style = """ 
             <style>
@@ -170,3 +170,4 @@ elif selected == "Contact":
 elif selected == "About":
 
     st.info("Crop Teck v1.0.0")
+
