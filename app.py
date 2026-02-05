@@ -4,7 +4,6 @@ import plotly.express as px
 from PIL import Image
 from pathlib import Path
 import requests
-import cv2
 
 st.set_page_config(page_title="Crop Teck", page_icon="leaf", layout="centered")
 
@@ -169,4 +168,5 @@ elif selected == "Contact":
     st.info("Call/WhatsApp: +254712345678")
 
 elif selected == "About":
+
     st.info("Crop Teck v1.0.0")
